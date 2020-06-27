@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+require 'rubygems'
+
+#source "https://rubygems.org"
+gem 'watir', '~>6.0'
+gem 'cucumber', '~> 3.2.0'
+gem 'rspec'
+gem 'cucumber-core'
+gem 'bundler'
+gem 'ffi'
+gem 'test-unit'
+gem 'minitest', '~> 5.14'
+
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+
+# gem "rails"
