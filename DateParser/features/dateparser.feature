@@ -3,10 +3,19 @@ Feature: User inputs date and returns date matches user intention
     Given a user goes to website
     When enter <query> on input field
     And click submit
-    Then I see "Sun Aug 16 2020 00:00:00 GMT+0000" on the form
+    Then I see <query> on the form
     Examples:
     |query|
-    |"16-august-2020"|
-    |"16-aug-2020"|
-    |"16-08-2020" |
-    |"16-8-2020"  |
+    |"16 aug 2020"   |
+    |"20-august-2020"|
+    |"18-aug-20"     |
+    |"27-6-2020"     |
+
+#   Scenario Outline: User input month at the beginning specific pattern
+#     Given User goes to website
+#     When enter <mdate> on input field
+#     #And click submit
+#     Then I see <mdate> on the form
+#     Examples:
+#     |mdate|
+#     |"04-11-2020"|
