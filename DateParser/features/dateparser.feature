@@ -11,7 +11,7 @@ Feature: User inputs date and returns date matches user intention
     |"18-aug-20"     |
     |"27-6-2020"     |
 
-#   Scenario Outline: User input month at the beginning specific pattern
+# Scenario Outline: User input month at the beginning specific pattern
 #     Given User goes to website
 #     When enter <mdate> on input field
 #     #And click submit
